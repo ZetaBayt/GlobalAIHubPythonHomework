@@ -156,9 +156,10 @@ def add_exam():
 
 
         if point == 'FF':
-            print("{} dersinde başarısız oldun!..".format(lessons[select-1]))
+            print("{} Dersinde başarısız oldun!..".format(lessons[select-1]))
+            main_menu2()
         else:
-            print("**** {} Dersinin Notları **** ".format(examinfo[lessons[select-1]]))
+            print("**** {} Dersinin Notları **** ".format(lessons[select-1]))
             print(" Vize Notu :", examinfo[lessons[select-1]][0], "\n", "Final Notu :", examinfo[lessons[select-1]][1], "\n", "Proje Notu :",
                   examinfo[lessons[select-1]][2], "\n")
             print(f"{examinfo[lessons[select-1]][3]} puan ile {examinfo[lessons[select-1]][4]} notunu aldın. Tebrikler...", "\n")
